@@ -4,30 +4,20 @@
 function third() {
   console.log("Inside third");
 }
-
-function second() {
+function second(){
   console.log("Inside second");
-  third(); // third is pushed above second
+  third(); 
   console.log("Back inside second");
 }
-
 function first() {
   console.log("Inside first");
-  second(); // second is pushed above first
+  second(); 
   console.log("Back inside first");
 }
-
 first();
 
-// Expected output:
-// Inside first
-// Inside second
-// Inside third
-// Back inside second
-// Back inside first
+// javascript Execution context
+// global execution context
+// Functions exeucutions contet
 
-// Stack while third() runs (top first):
-// | third  |
-// | second |
-// | first  |
-// | global |
+
