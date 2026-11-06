@@ -18,6 +18,26 @@ first();
 
 // javascript Execution context
 // global execution context
-// Functions exeucutions contet
+// Functions exeucutions context
+// eval Execution context
+
+// memory creation phase
+// Execution Phase
+
+let val1 = 10;
+let val2 = 20;
+function addNum(num1,num2){
+  let total = num1 + num2;
+  return total;
+}
+let result = addNum(val1,val2);
+let result2 = addNum(100,200);
+
+
+
+
+
+
+
 
 
