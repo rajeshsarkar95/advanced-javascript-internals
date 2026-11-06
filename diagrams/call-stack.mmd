@@ -1,0 +1,7 @@
+flowchart TB
+    A[global context] --> B[first()]
+    B --> C[second()]
+    C --> D[third()]
+    D --> E[third returns]
+    E --> F[second resumes]
+    F --> G[first resumes]

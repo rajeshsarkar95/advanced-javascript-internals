@@ -1,0 +1,9 @@
+flowchart TD
+    A[Current JavaScript task] --> B[Call Stack executes synchronous code]
+    B --> C{Stack empty?}
+    C -- No --> B
+    C -- Yes --> D[Drain microtask queue]
+    D --> E{More microtasks?}
+    E -- Yes --> D
+    E -- No --> F[Host selects next eligible task]
+    F --> B
