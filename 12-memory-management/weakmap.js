@@ -1,13 +1,11 @@
 // Run: node 12-memory-management/weakmap.js
 
 const privateData = new WeakMap();
-
-function createUser(name) {
+function createUser(name){
   const user = {};
-  privateData.set(user, { name });
+  privateData.set(user, {name});
   return user;
 }
-
 const user = createUser("Rajesh");
 console.log(privateData.get(user).name);
 
