@@ -6,6 +6,7 @@ var value = 10;
 function sayHi() {
   console.log("Hi");
 }
+console.log('');
 
 sayHi();
 
@@ -14,3 +15,8 @@ sayHi();
 // Uncommenting the next two lines causes a ReferenceError:
 // console.log(userName);
 // let userName = "Rajesh";
+
+// excutions content 
+// global excution context
+// eval execution context
+// 
