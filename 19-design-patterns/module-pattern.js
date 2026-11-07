@@ -2,16 +2,15 @@
 
 const cart = (() => {
   const items = [];
-
   return {
-    add(item) {
+    add(item){
       items.push(item);
     },
-    getItems() {
+    getItems(){
       return [...items];
     }
   };
 })();
-
 cart.add("Keyboard");
 console.log(cart.getItems());
+

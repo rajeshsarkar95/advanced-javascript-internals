@@ -5,7 +5,7 @@ const original = {
   settings: { theme: "dark" }
 };
 
-const shallow = { ...original };
+const shallow = {...original};
 shallow.settings.theme = "light";
 
 console.log(original.settings.theme); // "light": nested object is shared

@@ -2,8 +2,7 @@
 
 function debounce(callback, delay) {
   let timerId;
-
-  return (...args) => {
+  return (...args) =>{
     clearTimeout(timerId);
     timerId = setTimeout(() => callback(...args), delay);
   };
@@ -11,8 +10,7 @@ function debounce(callback, delay) {
 
 function throttle(callback, delay) {
   let waiting = false;
-
-  return (...args) => {
+  return (...args) =>{
     if (waiting) return;
     callback(...args);
     waiting = true;

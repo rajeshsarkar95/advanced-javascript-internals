@@ -5,7 +5,7 @@ var legacyValue = "initialized";
 
 // Function declarations can be called before their textual position.
 sayHello();
-function sayHello() {
+function sayHello(){
   console.log("Hello");
 }
 
